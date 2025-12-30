@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Последний поворот</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 0.9rem;
+        }
+        
+        nav ul li a:hover {
+            color: #ccc;
+        }
+        
+        .book-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #222;
+        }
+        
+        .chapter {
+            margin-bottom: 3rem;
+        }
+        
+        .chapter a {
+            text-decoration: none;
+            color: gray;
+        }
+        
+        .chapter-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            text-indent: 1.5rem;
+            text-align: justify;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #222;
+            color: #777;
+            font-size: 0.8rem;
+        }
+        
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            
+            nav ul {
+                margin-top: 1rem;
+            }
+            
+            nav ul li {
+                margin: 0 0.5rem;
+            }
+            
+            .book-container {
+                padding: 1rem;
+                margin: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Последний поворот</div>
+            <nav>
+                <ul>
+                    <li><a href="https://kirill-fe.github.io/projects" target="_blank">Проекты</a></li>
+                    <li><a href="https://t.me/kirill_florik" target="_blank">Телеграмм</a></li>
+                    <li><a href="https://vk.com/kirill_Florik" target="_blank">ВК</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="book-container">
+        <h1>ПОСЛЕДНИЙ ПОВОРОТ</h1>
+        
+        <div class="chapter">
+            <p>Май.</p>
+            
+            <p>Казанский университет провёл Гришу "Греку" запахом цветущих каштанов и предвкушением лета. Первый курс экономического факультета закрыт на одни пятерки. Он стоял у главного корпуса, курил Мальборо и не подозревал, что через минуту его жизнь разделится на до и после.</p>
+            
+            <p>- Эй, шкет!</p>
+            
+            <p>К нему подошел коренастый парень в черной Адидас-кофте, с выбритыми висками и холодным взглядом.</p>
+            
+            <p>- Ты же Гриша? Говорят, ты цифры как божий одуванчик щелкаешь.</p>
+            
+            <p>- А тебе зачем? - насторожился Гриша.</p>
+            
+            <p>- Меня Артем зовут. Но для своих я Чиф.</p>
+            
+            <p>Грека слышал это прозвище. Чиф из тех, кто держит общак на ТЦ Кольце. Ходят слухи, что он правой рукой ходит у самого Аделя «Рыжего».</p>
+            
+            <p>- У нас работа для тебя. Разовая. Посчитаешь одно дельце - получишь пять штук.</p>
+            
+            <p>Гриша хотел отказаться, но в кармане лежали последние 500 рублей, и не было выбора.</p>
+        </div>
+        
+        <div class="chapter">
+            <div class="chapter-title">Июнь</div>
+            
+            <p>Контора находилась в полуподвале на улице Татарстан. Воняло сыростью, сигаретами и чем-то металлическим.</p>
+            
+            <p>- Это наш новый калькулятор, - представил его Чиф.</p>
+            
+            <p>За столом сидел Адель «Рыжий» - рыжеволосый главарь с шрамом через бровь. Рядом - его зам, Лёха, худой, с колючим взглядом и привычкой постоянно щелкать зажигалкой.</p>
+            
+            <p>- Ну что, студент, проверишь наши расклады? - ухмыльнулся Рыжий.</p>
+            
+            <p>Дело оказалось простым: нужно было сверить цифры по обналу из челнинского автозавода. Гриша управился за час.</p>
+            
+            <p>- Неплохо, - кивнул Лёха. - Только вот ошибся.</p>
+            
+            <p>- Где? - нахмурился Грека.</p>
+            
+            <p>- Здесь. - Лёха внезапно схватил его за футболку и прижал к стене. - Ты думаешь, мы просто так тебя взяли? Теперь ты наш. И если хоть раз накосячишь - будешь считать собственные зубы на асфальте.</p>
+            
+            <p>В ту ночь Гриша впервые увидел, как работают эти люди. Должника из Зеленодольска привезли в гараж на Свердлова.</p>
+        </div>
+        
+        <div class="chapter">
+            <div class="chapter-title">Август</div>
+            
+            <p>- Финал сезона, пацаны, - объявил Рыжий на сходке в заброшенном кафе на Профсоюзной. - Берем последний куш в Альметьевске - и до осени свободны.</p>
+            
+            <p>Грека должен был только считать деньги. Но когда их шестерка подъехала к нефтебазе, вместо грузовика с налом их встретили мигалки.</p>
+            
+            <p>- Менты!</p>
+            
+            <p>- Газу, блядь! - орал Чиф, хватая Пистолет Макарова.</p>
+            
+            <p>Гриша давил на газ, но в зеркале увидел, как из-за цистерн выбегает Лёха с окровавленным лицом.</p>
+            
+            <p>- Тормози! - Чиф вцепился ему в плечо. - Своих не бросаем!</p>
+            
+            <p>Но Грека уже видел автоматы в руках ОМОНовцев.</p>
+            
+            <p>- Нас всех здесь положат.</p>
+            
+            <p>Он встретился глазами с Лёхи.</p>
+            
+            <p>- Прости... - прошептал и выжал педаль в пол.</p>
+        </div>
+        
+        <div class="chapter">
+            <div class="chapter-title">Сентябрь</div>
+            
+            <p>Через две недели Гриша снова шел в университет. Как будто ничего не случилось.</p>
+            
+            <p>Но теперь он вздрагивал от каждого стука, оборачивался на каждую черную шестерку.</p>
+            
+            <p>Однажды вечером, сидя в своей шестерке у Кольца, он посмотрел в зеркало.</p>
+            
+            <p>Там стоял Лёха.</p>
+            
+            <p>Весь в крови и что то говорил.</p>
+            
+            <p>Грека резко обернулся - никого.</p>
+            
+            <p>Но он знал: Казань - город столица Татарстана, и долга ему тут не пробыть.</p>
+        </div>
+        
+        <div class="chapter">
+            <div class="chapter-title">Дома</div>
+            
+            <p>В новостях показали репортаж: В Альметьевске задержана банда, похищавшая нефтедоллары.</p>
+            
+            <p>Гриша выключил телевизор.</p>
+            
+            <p>Его всё время мучил тут день, он не знает что с Лёхой, и не знает что будет с ним если его на улице встретят Чиф с Рыжим...</p>
+            <a href="p2.html">Часть 2>></a>
+        </div>
+    </div>
+    
+    <footer>
+        © 2025 <a href="https://kirill-fe.github.io/projects">Florik Projects</a>. Все права защищены
+    </footer>     
+</body>
+</html>
